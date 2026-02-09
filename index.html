@@ -1,784 +1,1487 @@
 <!doctype html>
-<html lang="en" class="h-full scroll-smooth">
+<html lang="en" class="h-full">
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy 21st Birthday Saniya ✨</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Happy 20th Birthday Saniya</title>
   <script src="/_sdk/element_sdk.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&amp;family=Quicksand:wght@300;400;500;600&amp;family=Caveat:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Cormorant+Garamond:wght@300;400;500;600&amp;family=Cinzel:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
     body {
       box-sizing: border-box;
     }
     
-    html, body {
-      height: 100%;
-    }
-    
     * {
-      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
     
-    .font-cursive {
-      font-family: 'Dancing Script', cursive;
-      font-weight: 700;
+    :root {
+      --gold: #D4AF37;
+      --soft-pink: #E8B4B8;
+      --deep-wine: #722F37;
+      --cream: #FDF5E6;
+      --charcoal: #1a1a1a;
     }
     
-    .font-handwritten {
-      font-family: 'Caveat', cursive;
-      font-weight: 600;
+    .font-cinematic {
+      font-family: 'Cinzel', serif;
     }
     
-    .font-body {
-      font-family: 'Quicksand', sans-serif;
-    }
-    
-    .font-serif {
+    .font-elegant {
       font-family: 'Playfair Display', serif;
     }
     
-    /* Premium background with multiple gradients */
-    .luxury-bg {
-      background: 
-        radial-gradient(circle at 20% 50%, rgba(255, 182, 193, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(216, 191, 216, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 40% 20%, rgba(255, 228, 181, 0.1) 0%, transparent 40%),
-        linear-gradient(180deg, #fef9f6 0%, #faf6f3 25%, #f8f2fb 50%, #fef9f6 75%, #fffbf8 100%);
-      background-attachment: fixed;
+    .font-classic {
+      font-family: 'Cormorant Garamond', serif;
     }
     
-    /* Glass morphism effect */
-    .glass-card {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(20px);
-      border: 1.5px solid rgba(255, 255, 255, 0.6);
-      box-shadow: 
-        0 8px 32px 0 rgba(31, 38, 135, 0.08),
-        inset 0 0 0 0.5px rgba(255, 255, 255, 0.2);
-    }
-    
-    /* Enhanced shadow system */
-    .shadow-luxury {
-      box-shadow: 
-        0 20px 60px rgba(212, 165, 116, 0.12),
-        0 0 1px rgba(0, 0, 0, 0.05);
-    }
-    
-    .shadow-elevated {
-      box-shadow: 
-        0 25px 50px rgba(201, 160, 220, 0.15),
-        0 5px 15px rgba(0, 0, 0, 0.08);
-    }
-    
-    /* Polaroid with premium styling */
-    .polaroid-premium {
-      background: white;
-      padding: 14px 14px 50px 14px;
-      box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.12),
-        0 0 0 1px rgba(0, 0, 0, 0.05);
-      transform: rotate(var(--rotation, 0deg));
-      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-      border-radius: 2px;
-    }
-    
-    .polaroid-premium:hover {
-      transform: rotate(0deg) scale(1.08) translateY(-8px);
-      box-shadow: 
-        0 35px 70px rgba(0, 0, 0, 0.2),
-        0 0 0 1px rgba(0, 0, 0, 0.05);
-    }
-    
-    /* Enhanced animations */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-15px) rotate(2deg); }
-    }
-    
-    @keyframes glow {
-      0%, 100% { 
-        filter: drop-shadow(0 0 5px rgba(212, 165, 116, 0.4));
-      }
-      50% { 
-        filter: drop-shadow(0 0 15px rgba(212, 165, 116, 0.7));
-      }
-    }
-    
-    @keyframes shimmer {
-      0%, 100% { opacity: 0.6; }
-      50% { opacity: 1; }
-    }
-    
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      14% { transform: scale(1.12); }
-      28% { transform: scale(1); }
-      42% { transform: scale(1.12); }
-      56% { transform: scale(1); }
-    }
-    
-    @keyframes pulse-glow {
-      0%, 100% { 
-        box-shadow: 0 0 20px rgba(201, 160, 220, 0.3);
-      }
-      50% { 
-        box-shadow: 0 0 40px rgba(201, 160, 220, 0.6);
-      }
-    }
-    
-    @keyframes slide-in-left {
-      from {
-        opacity: 0;
-        transform: translateX(-60px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    @keyframes slide-in-right {
-      from {
-        opacity: 0;
-        transform: translateX(60px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    .animate-fade-in {
-      animation: fadeInUp 0.9s ease-out forwards;
-      opacity: 0;
-    }
-    
-    .animate-fade-in-down {
-      animation: fadeInDown 0.9s ease-out forwards;
-      opacity: 0;
-    }
-    
-    .float-animation {
-      animation: float 4s ease-in-out infinite;
-    }
-    
-    .glow-animation {
-      animation: glow 3s ease-in-out infinite;
-    }
-    
-    .shimmer-animation {
-      animation: shimmer 2s ease-in-out infinite;
-    }
-    
-    .heart-beat {
-      animation: heartbeat 1.4s ease-in-out infinite;
-    }
-    
-    .pulse-glow {
-      animation: pulse-glow 2.5s ease-in-out infinite;
-    }
-    
-    .slide-left {
-      animation: slide-in-left 0.8s ease-out;
-    }
-    
-    .slide-right {
-      animation: slide-in-right 0.8s ease-out;
-    }
-    
-    .delay-100 { animation-delay: 0.1s; }
-    .delay-200 { animation-delay: 0.2s; }
-    .delay-300 { animation-delay: 0.3s; }
-    .delay-400 { animation-delay: 0.4s; }
-    .delay-500 { animation-delay: 0.5s; }
-    .delay-600 { animation-delay: 0.6s; }
-    
-    /* Premium text effects */
-    .gradient-text-primary {
-      background: linear-gradient(135deg, #c9a0dc 0%, #d4a574 50%, #f5a0a0 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    .gradient-text-secondary {
-      background: linear-gradient(135deg, #f5d0c5 0%, #d4a574 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    /* Enhanced timeline */
-    .timeline-dot {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      border: 4px solid white;
-      box-shadow: 0 0 0 3px #c9a0dc;
-      position: relative;
-      z-index: 10;
-    }
-    
-    .timeline-line-premium {
-      background: linear-gradient(180deg, rgba(245, 208, 197, 0.8) 0%, rgba(219, 196, 240, 0.8) 50%, rgba(245, 208, 197, 0.8) 100%);
-      box-shadow: 0 0 20px rgba(201, 160, 220, 0.2);
-    }
-    
-    /* Quote styling */
-    .quote-card {
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .quote-card::before {
-      content: '';
-      position: absolute;
+    /* Film grain overlay */
+    .film-grain {
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 3px;
-      background: linear-gradient(90deg, #f5d0c5, #c9a0dc, #d4a574);
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.05;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
     }
     
-    .quote-mark {
-      font-size: 5rem;
-      line-height: 0.8;
-      opacity: 0.15;
-      font-family: Georgia, serif;
-      background: linear-gradient(135deg, #d4a574, #c9a0dc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    /* Section divider premium */
-    .divider-premium {
-      height: 2px;
-      background: linear-gradient(90deg, 
-        transparent 0%,
-        rgba(212, 165, 116, 0.3) 15%,
-        rgba(201, 160, 220, 0.5) 50%,
-        rgba(212, 165, 116, 0.3) 85%,
-        transparent 100%
-      );
-      box-shadow: 0 2px 8px rgba(201, 160, 220, 0.2);
-    }
-    
-    /* Handwritten note premium */
-    .note-premium {
-      background: linear-gradient(135deg, #fef9e7 0%, #fff8e7 100%);
-      border-left: 4px solid #d4a574;
-      box-shadow: 
-        3px 3px 15px rgba(0, 0, 0, 0.1),
-        inset -1px -1px 0 rgba(0, 0, 0, 0.02);
-      transform: rotate(-0.5deg);
-    }
-    
-    /* Button hover effect */
-    .btn-luxury {
-      position: relative;
+    /* Countdown styles */
+    .countdown-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, #1a1a1a 0%, #000 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      flex-direction: column;
       overflow: hidden;
-      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
     
-    .btn-luxury::before {
+    .countdown-number {
+      font-size: 15rem;
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      text-shadow: 0 0 100px rgba(212, 175, 55, 0.8), 0 0 200px rgba(212, 175, 55, 0.4);
+      animation: countPulse 1s ease-in-out;
+      letter-spacing: 20px;
+    }
+    
+    @keyframes countPulse {
+      0% { 
+        transform: scale(0) rotateY(180deg); 
+        opacity: 0;
+        filter: blur(20px);
+      }
+      50% { 
+        transform: scale(1.3) rotateY(0deg); 
+        opacity: 1;
+        filter: blur(0px);
+      }
+      100% { 
+        transform: scale(1) rotateY(0deg); 
+        opacity: 0;
+        filter: blur(20px);
+      }
+    }
+    
+    .countdown-ring {
+      position: absolute;
+      border: 3px solid var(--gold);
+      border-radius: 50%;
+      animation: countdownRing 1s ease-out;
+      opacity: 0;
+    }
+    
+    @keyframes countdownRing {
+      0% { 
+        transform: scale(0.3); 
+        opacity: 1;
+        box-shadow: 0 0 40px var(--gold);
+      }
+      100% { 
+        transform: scale(2); 
+        opacity: 0;
+        box-shadow: 0 0 100px transparent;
+      }
+    }
+    
+    .film-reel {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+      border: 4px solid var(--gold);
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: reelSpin 10s linear infinite;
+    }
+    
+    .film-reel::before {
       content: '';
       position: absolute;
       top: 50%;
       left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      border: 3px solid var(--gold);
+      border-radius: 50%;
+    }
+    
+    @keyframes reelSpin {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    
+    /* Hero section */
+    .hero-section {
+      position: relative;
+      height: 100%;
+      min-height: 600px;
+      overflow: hidden;
+      background: radial-gradient(ellipse 150% 100% at 50% 0%, #3d2f3d 0%, #1a1a1a 50%, #000 100%);
+    }
+    
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: epicZoom 25s ease-in-out infinite alternate;
+    }
+    
+    @keyframes epicZoom {
+      from { transform: scale(1) rotateZ(0deg); }
+      to { transform: scale(1.15) rotateZ(2deg); }
+    }
+    
+    .hero-light-burst {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      top: -50%;
+      left: -50%;
+      background: radial-gradient(circle at center, rgba(212,175,55,0.15) 0%, transparent 70%);
+      animation: lightBurst 8s ease-in-out infinite;
+    }
+    
+    @keyframes lightBurst {
+      0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.5; }
+      50% { transform: scale(1.3) rotate(180deg); opacity: 1; }
+    }
+    
+    /* Floating particles */
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    
+    .particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: floatUpMagic 10s ease-in-out infinite;
+      opacity: 0;
+      box-shadow: 0 0 20px var(--gold), 0 0 40px rgba(212,175,55,0.5);
+    }
+    
+    @keyframes floatUpMagic {
+      0% { 
+        transform: translateY(100%) translateX(-50px) scale(0); 
+        opacity: 0; 
+      }
+      10% { 
+        opacity: 0.9;
+        filter: blur(0px);
+      }
+      90% { 
+        opacity: 0.9;
+        filter: blur(0px);
+      }
+      100% { 
+        transform: translateY(-100vh) translateX(50px) scale(0); 
+        opacity: 0;
+        filter: blur(10px);
+      }
+    }
+    
+    /* Bokeh lights */
+    .bokeh {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(40px);
+      animation: bokehFloatEpic 8s ease-in-out infinite;
+    }
+    
+    @keyframes bokehFloatEpic {
+      0%, 100% { transform: translateY(0) scale(1); filter: blur(40px); }
+      50% { transform: translateY(-40px) scale(1.3); filter: blur(60px); }
+    }
+    
+    /* Title animations */
+    .title-reveal {
+      animation: titleRevealEpic 3s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+      opacity: 0;
+      transform: translateY(100px) rotateX(90deg);
+      perspective: 1000px;
+    }
+    
+    @keyframes titleRevealEpic {
+      0% { 
+        opacity: 0; 
+        transform: translateY(100px) rotateX(90deg) scale(0.5);
+        filter: blur(20px);
+      }
+      50% {
+        filter: blur(0px);
+      }
+      100% { 
+        opacity: 1; 
+        transform: translateY(0) rotateX(0deg) scale(1);
+        filter: blur(0px);
+      }
+    }
+    
+    .subtitle-reveal {
+      animation: subtitleRevealEpic 3s cubic-bezier(0.23, 1, 0.320, 1) 0.4s forwards;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    
+    @keyframes subtitleRevealEpic {
+      0% { 
+        opacity: 0; 
+        transform: translateY(50px);
+        filter: blur(15px);
+        letter-spacing: 20px;
+      }
+      100% { 
+        opacity: 1; 
+        transform: translateY(0);
+        filter: blur(0px);
+        letter-spacing: 2px;
+      }
+    }
+    
+    /* Section styles */
+    .section {
+      position: relative;
+      padding: 100px 20px;
+      background: var(--charcoal);
+      overflow: hidden;
+    }
+    
+    .section-title {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 60px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+    }
+    
+    /* Polaroid styles */
+    .polaroid {
+      background: white;
+      padding: 15px 15px 50px 15px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      transform: rotate(-2deg);
+      transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+    }
+    
+    .polaroid::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--soft-pink) 100%);
+      border-radius: 5px;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+    
+    .polaroid:hover {
+      transform: rotate(0deg) scale(1.15) translateY(-30px);
+      box-shadow: 0 40px 100px rgba(212, 175, 55, 0.5);
+    }
+    
+    .polaroid:hover::before {
+      opacity: 0.3;
+    }
+    
+    .polaroid-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--soft-pink) 0%, var(--deep-wine) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    
+    .polaroid-caption {
+      font-family: 'Cormorant Garamond', serif;
+      color: #333;
+      text-align: center;
+      margin-top: 15px;
+      font-style: italic;
+    }
+    
+    /* Film strip */
+    .film-strip {
+      display: flex;
+      gap: 20px;
+      padding: 30px 0;
+      animation: filmScroll 20s linear infinite;
+    }
+    
+    @keyframes filmScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    
+    .film-frame {
+      flex-shrink: 0;
+      width: 180px;
+      height: 250px;
+      background: #111;
+      border: 3px solid #333;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .film-frame::before,
+    .film-frame::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 20px;
+      background: repeating-linear-gradient(90deg, #000 0px, #000 10px, transparent 10px, transparent 15px);
+    }
+    
+    .film-frame::before { top: 0; }
+    .film-frame::after { bottom: 0; }
+    
+    .film-content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, var(--deep-wine) 0%, var(--soft-pink) 100%);
+      font-size: 3rem;
+      padding: 25px 10px;
+    }
+    
+    /* Emotional message */
+    .emotional-section {
+      height: 100%;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #000 0%, #3d2f3d 50%, #000 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .emotional-section::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%);
+      animation: emotionalPulse 4s ease-in-out infinite;
+    }
+    
+    @keyframes emotionalPulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.5); }
+    }
+    
+    .emotional-text {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 4vw, 3.5rem);
+      color: var(--cream);
+      text-align: center;
+      max-width: 900px;
+      line-height: 1.8;
+      padding: 0 40px;
+      animation: emotionalFadeInUp 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 10px 40px rgba(212,175,55,0.3);
+    }
+    
+    @keyframes emotionalFadeInUp {
+      0% { 
+        opacity: 0; 
+        transform: translateY(80px);
+        filter: blur(20px);
+      }
+      100% { 
+        opacity: 1; 
+        transform: translateY(0);
+        filter: blur(0px);
+      }
+    }
+    
+    /* Timeline */
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, var(--gold) 0%, var(--soft-pink) 100%);
+      transform: translateX(-50%);
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 60px;
+      opacity: 0;
+      animation: timelineItemFade 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    
+    .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+    .timeline-item:nth-child(2) { animation-delay: 0.3s; }
+    .timeline-item:nth-child(3) { animation-delay: 0.5s; }
+    .timeline-item:nth-child(4) { animation-delay: 0.7s; }
+    
+    @keyframes timelineItemFade {
+      0% { 
+        opacity: 0; 
+        transform: translateX(-60px) rotateY(90deg);
+      }
+      100% { 
+        opacity: 1; 
+        transform: translateX(0) rotateY(0deg);
+      }
+    }
+    
+    .timeline-item:nth-child(odd) {
+      padding-right: 55%;
+      text-align: right;
+    }
+    
+    .timeline-item:nth-child(even) {
+      padding-left: 55%;
+    }
+    
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: var(--gold);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 30px var(--gold), 0 0 60px rgba(212,175,55,0.5);
+      animation: dotPulseEpic 2s ease-in-out infinite;
+    }
+    
+    @keyframes dotPulseEpic {
+      0%, 100% { 
+        transform: translateX(-50%) scale(1);
+        box-shadow: 0 0 30px var(--gold), 0 0 60px rgba(212,175,55,0.5);
+      }
+      50% { 
+        transform: translateX(-50%) scale(1.3);
+        box-shadow: 0 0 50px var(--gold), 0 0 100px rgba(212,175,55,0.8);
+      }
+    }
+    
+    .timeline-content {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    
+    .timeline-year {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .timeline-text {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--cream);
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    
+    /* Celebration section */
+    .celebration-section {
+      position: relative;
+      height: 100%;
+      min-height: 600px;
+      background: radial-gradient(ellipse at center, #3d2f3d 0%, #1a1a1a 50%, #000 100%);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .celebration-section::before,
+    .celebration-section::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    
+    .celebration-section::before {
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(232,180,184,0.15) 0%, transparent 50%);
+      animation: celebrationLights 6s ease-in-out infinite;
+    }
+    
+    @keyframes celebrationLights {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+    
+    .cake {
+      font-size: 10rem;
+      animation: cakeBounceEpic 2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+      filter: drop-shadow(0 20px 40px rgba(212,175,55,0.4));
+      position: relative;
+      z-index: 2;
+    }
+    
+    @keyframes cakeBounceEpic {
+      0%, 100% { 
+        transform: translateY(0) scale(1); 
+        filter: drop-shadow(0 20px 40px rgba(212,175,55,0.4));
+      }
+      50% { 
+        transform: translateY(-40px) scale(1.1); 
+        filter: drop-shadow(0 30px 60px rgba(212,175,55,0.6));
+      }
+    }
+    
+    /* Confetti */
+    .confetti {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      animation: confettiFallEpic 5s ease-in-out infinite;
+      box-shadow: 0 0 20px currentColor;
+    }
+    
+    @keyframes confettiFallEpic {
+      0% { 
+        transform: translateY(-100px) rotate(0deg) scale(1); 
+        opacity: 1; 
+      }
+      50% {
+        opacity: 1;
+      }
+      100% { 
+        transform: translateY(100vh) rotate(720deg) scale(0); 
+        opacity: 0; 
+      }
+    }
+    
+    /* Fireworks */
+    .firework {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      animation: fireworkBurstEpic 2s ease-out infinite;
+      box-shadow: 0 0 30px currentColor;
+    }
+    
+    @keyframes fireworkBurstEpic {
+      0% { 
+        transform: scale(0) translate(0, 0); 
+        opacity: 1; 
+        filter: blur(0px);
+      }
+      50% { 
+        opacity: 1;
+        filter: blur(2px);
+      }
+      100% { 
+        transform: scale(3) translate(var(--tx), var(--ty)); 
+        opacity: 0;
+        filter: blur(10px);
+      }
+    }
+    
+    /* Footer/Credits */
+    .credits-section {
+      background: #000;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .credits-roll {
+      animation: creditsRoll 10s linear infinite;
+    }
+    
+    @keyframes creditsRoll {
+      from { transform: translateY(0); }
+      to { transform: translateY(-20px); }
+    }
+    
+    .credits-title {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      font-size: 2rem;
+      margin-bottom: 40px;
+      letter-spacing: 5px;
+    }
+    
+    .credit-item {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--cream);
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+    
+    .credit-role {
+      color: var(--soft-pink);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+    }
+    
+    /* Play button */
+    .play-button {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 80px;
+      border: 3px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: rgba(0,0,0,0.5);
+    }
+    
+    .play-button:hover {
+      background: var(--gold);
+      transform: translateX(-50%) scale(1.1);
+    }
+    
+    .play-button::before {
+      content: '';
       width: 0;
       height: 0;
+      border-left: 25px solid var(--gold);
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      margin-left: 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .play-button:hover::before {
+      border-left-color: #000;
+    }
+    
+    /* Vignette effect */
+    .vignette {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9998;
+      background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.6) 100%);
+    }
+    
+    /* Auto-scroll controls */
+    .auto-scroll-controls {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9997;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 20px;
+      border-radius: 50px;
+      border: 2px solid var(--gold);
+      backdrop-filter: blur(10px);
+    }
+    
+    .control-button {
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.3);
-      transform: translate(-50%, -50%);
-      transition: width 0.6s, height 0.6s;
+      border: 2px solid var(--gold);
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--gold);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      font-weight: bold;
     }
     
-    .btn-luxury:hover::before {
-      width: 300px;
-      height: 300px;
+    .control-button:hover {
+      background: var(--gold);
+      color: #000;
+      transform: scale(1.1);
     }
     
-    /* Section entrance */
-    .section-entrance {
+    .status-text {
+      color: var(--gold);
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      min-width: 80px;
+      text-align: center;
+    }
+    
+    /* Music Controls */
+    .music-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      z-index: 9997;
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 20px;
+      border-radius: 50px;
+      border: 2px solid var(--gold);
+      backdrop-filter: blur(10px);
+    }
+    
+    .music-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--gold);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+    
+    .music-button:hover {
+      background: var(--gold);
+      color: #000;
+      transform: scale(1.1);
+    }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: var(--gold);
+      border-radius: 4px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .countdown-number {
+        font-size: 8rem;
+      }
+      
+      .timeline::before {
+        left: 20px;
+      }
+      
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left;
+      }
+      
+      .timeline-dot {
+        left: 20px;
+      }
+      
+      .film-strip {
+        animation-duration: 15s;
+      }
+      
+      .auto-scroll-controls {
+        bottom: 20px;
+        right: 20px;
+        gap: 10px;
+        padding: 12px 15px;
+      }
+      
+      .control-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+      
+      .status-text {
+        font-size: 0.8rem;
+        min-width: 70px;
+      }
+    }
+    
+    .hidden {
+      display: none !important;
+    }
+    
+    .main-content {
       opacity: 0;
+      transition: opacity 1s ease;
     }
     
-    .section-in-view {
-      animation: fadeInUp 1s ease-out forwards;
-      opacity: 0;
+    .main-content.visible {
+      opacity: 1;
     }
   </style>
   <style>@view-transition { navigation: auto; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
- <body class="h-full font-body luxury-bg">
-  <div id="app-wrapper" class="w-full h-full overflow-auto"><!-- Animated background elements -->
-   <div class="fixed inset-0 pointer-events-none overflow-hidden" aria-hidden="true" style="z-index: 1;">
-    <div class="absolute top-24 left-8 text-5xl float-animation opacity-40 glow-animation">
-     🌸
+ <body class="h-full bg-[#1a1a1a] overflow-x-hidden"><!-- Film Grain Overlay -->
+  <div class="film-grain"></div><!-- Vignette Effect -->
+  <div class="vignette"></div><!-- Countdown Screen -->
+  <div id="countdown" class="countdown-screen">
+   <div class="film-reel"></div>
+   <div id="countdownNumber" class="countdown-number">
+    3
+   </div>
+  </div><!-- Main Content -->
+  <div id="mainContent" class="main-content w-full"><!-- Hero Section -->
+   <section class="hero-section">
+    <div class="hero-bg"><!-- Bokeh Lights -->
+     <div class="bokeh" style="width: 150px; height: 150px; background: rgba(212,175,55,0.3); top: 20%; left: 10%;"></div>
+     <div class="bokeh" style="width: 200px; height: 200px; background: rgba(232,180,184,0.2); top: 60%; right: 15%; animation-delay: 1s;"></div>
+     <div class="bokeh" style="width: 100px; height: 100px; background: rgba(212,175,55,0.25); top: 40%; left: 60%; animation-delay: 2s;"></div>
+     <div class="bokeh" style="width: 180px; height: 180px; background: rgba(114,47,55,0.3); bottom: 20%; left: 30%; animation-delay: 0.5s;"></div>
+    </div><!-- Particles -->
+    <div class="particles">
+     <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+     <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+     <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+     <div class="particle" style="left: 40%; animation-delay: 0.5s;"></div>
+     <div class="particle" style="left: 50%; animation-delay: 1.5s;"></div>
+     <div class="particle" style="left: 60%; animation-delay: 2.5s;"></div>
+     <div class="particle" style="left: 70%; animation-delay: 0.8s;"></div>
+     <div class="particle" style="left: 80%; animation-delay: 1.8s;"></div>
+     <div class="particle" style="left: 90%; animation-delay: 2.2s;"></div>
     </div>
-    <div class="absolute top-48 right-16 text-4xl float-animation delay-200 opacity-30">
-     ✨
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+     <div class="mb-6 text-6xl">
+      🎬
+     </div>
+     <h1 id="heroTitle" class="font-cinematic text-4xl md:text-6xl lg:text-7xl text-[#D4AF37] title-reveal tracking-wider mb-6" style="text-shadow: 0 0 60px rgba(212,175,55,0.5);">Happy 20th Birthday<br><span class="text-[#E8B4B8]" id="heroName">Saniya</span></h1>
+     <p id="heroSubtitle" class="font-classic text-xl md:text-2xl text-[#FDF5E6] subtitle-reveal tracking-widest opacity-80">Our Story. Our Memories. Our Forever Friendship.</p>
     </div>
-    <div class="absolute top-80 left-1/3 text-3xl float-animation delay-400 opacity-35">
-     🦋
-    </div>
-    <div class="absolute bottom-48 right-1/4 text-4xl float-animation delay-300 opacity-30 glow-animation">
-     🌷
-    </div>
-    <div class="absolute bottom-24 left-1/4 text-3xl float-animation delay-500 opacity-40">
-     💫
-    </div>
-    <div class="absolute top-1/2 right-8 text-2xl float-animation delay-100 opacity-25">
-     ✨
-    </div>
-   </div><!-- Hero Section -->
-   <section class="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 overflow-hidden" style="z-index: 5;"><!-- Hero background glow -->
-    <div class="absolute inset-0 -z-10">
-     <div class="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-pink-200 to-transparent rounded-full blur-3xl opacity-20"></div>
-     <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-purple-200 to-transparent rounded-full blur-3xl opacity-20"></div>
-    </div>
-    <div class="text-center max-w-5xl mx-auto relative z-10"><!-- Decorative top lights -->
-     <div class="flex justify-center gap-6 mb-12"><span class="text-3xl float-animation glow-animation">✨</span> <span class="text-3xl float-animation delay-200">🌸</span> <span class="text-3xl float-animation delay-400">✨</span>
-     </div><!-- Main title with premium styling -->
-     <div class="mb-8 animate-fade-in">
-      <h1 id="hero-title" class="font-cursive text-6xl md:text-7xl lg:text-8xl mb-6" style="color: #c9a0dc; text-shadow: 0 10px 40px rgba(201, 160, 220, 0.3), 0 0 80px rgba(201, 160, 220, 0.1);">Happy 21st Birthday Saniya ✨</h1>
-     </div><!-- Subtitle -->
-     <div class="mb-12 animate-fade-in delay-200">
-      <p id="hero-subtitle" class="font-serif text-xl md:text-2xl text-gray-700 tracking-widest" style="letter-spacing: 0.05em;">Celebrating 3 Beautiful Years of Friendship</p>
-     </div><!-- Premium date badge -->
-     <div class="mb-12 animate-fade-in delay-300">
-      <div class="glass-card inline-block rounded-full px-10 py-4 shadow-luxury"><span class="font-handwritten text-3xl" style="color: #d4a574;">🎂 21 Years of Wonderful You 🎂</span>
+   </section><!-- Chapter 1: Our First Chapter -->
+   <section class="section">
+    <h2 class="section-title text-2xl md:text-3xl">Chapter I</h2>
+    <p class="text-center font-elegant text-3xl md:text-4xl text-[#FDF5E6] mb-16 italic">"Where It All Began..."</p>
+    <div class="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
+     <div class="polaroid" style="animation-delay: 0.2s;">
+      <div class="polaroid-image">
+       📸
       </div>
-     </div><!-- Premium hearts -->
-     <div class="flex justify-center gap-4 mb-16 animate-fade-in delay-400"><span class="heart-beat text-4xl glow-animation" style="color: #f5a0a0; filter: drop-shadow(0 0 10px rgba(245, 160, 160, 0.4));">♥</span> <span class="heart-beat text-4xl delay-200 glow-animation" style="color: #c9a0dc; filter: drop-shadow(0 0 10px rgba(201, 160, 220, 0.4));">♥</span> <span class="heart-beat text-4xl delay-400 glow-animation" style="color: #f5a0a0; filter: drop-shadow(0 0 10px rgba(245, 160, 160, 0.4));">♥</span>
+      <p class="polaroid-caption">The day we first met</p>
      </div>
-    </div><!-- Scroll indicator -->
-    <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce" style="z-index: 20;">
-     <div class="flex flex-col items-center opacity-60 hover:opacity-100 transition-opacity"><span class="text-sm text-gray-600 mb-3 font-body">Scroll down to explore</span>
-      <svg class="w-6 h-6 text-gray-500 animate-pulse" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
+     <div class="polaroid" style="transform: rotate(3deg); animation-delay: 0.4s;">
+      <div class="polaroid-image" style="background: linear-gradient(135deg, #D4AF37 0%, #722F37 100%);">
+       💫
+      </div>
+      <p class="polaroid-caption">Instant connection</p>
+     </div>
+     <div class="polaroid" style="transform: rotate(-4deg); animation-delay: 0.6s;">
+      <div class="polaroid-image" style="background: linear-gradient(135deg, #2d1f2d 0%, #E8B4B8 100%);">
+       ✨
+      </div>
+      <p class="polaroid-caption">A beautiful beginning</p>
      </div>
     </div>
-   </section><!-- Premium divider -->
-   <div class="divider-premium mx-auto w-3/4 max-w-2xl my-8"></div><!-- Heartfelt Letter Section -->
-   <section class="py-24 px-6 relative z-10">
-    <div class="max-w-3xl mx-auto"><!-- Section title -->
-     <div class="text-center mb-16 section-entrance"><span class="font-handwritten text-4xl" style="color: #d4a574;">📮 A Letter From Your Best Friend</span>
-      <div class="mt-4 h-1 w-24 mx-auto rounded-full" style="background: linear-gradient(90deg, #f5d0c5, #c9a0dc);"></div>
-     </div><!-- Letter card with premium styling -->
-     <div class="glass-card rounded-3xl p-10 md:p-14 shadow-elevated section-entrance" style="animation-delay: 0.2s;">
-      <div class="font-handwritten text-xl md:text-2xl leading-relaxed text-gray-800 space-y-7">
-       <p id="letter-title" class="font-cursive text-4xl mb-10 gradient-text-primary" style="text-shadow: 0 2px 8px rgba(201, 160, 220, 0.2);">Dear Saniya,</p>
-       <p class="text-lg leading-8">Three years ago, I couldn't have imagined finding a friend like you. But here we are — <span class="font-semibold" style="color: #c9a0dc;">1,095 days</span> of laughter, tears, late-night talks, and countless memories that I'll cherish forever. 🌸</p>
-       <p class="text-lg leading-8">You came into my life like a gentle breeze and stayed like the warmth of home. Through every high and low, you've been my constant — my person, my confidante, my sister by choice.</p>
-       <p class="text-lg leading-8">Today, as you turn <span class="font-semibold" style="color: #c9a0dc;">21</span>, I want you to know how incredibly proud I am of the person you've become. Your kindness lights up every room, your strength inspires everyone around you, and your heart? It's the most beautiful thing about you. 💕</p>
-       <p class="text-lg leading-8">Here's to celebrating YOU — not just today, but every single day. Thank you for being you, for being mine, for being <span class="font-semibold" style="color: #c9a0dc;">us</span>.</p>
-       <div class="text-right mt-10 pt-6 border-t border-gray-200">
-        <p class="font-cursive text-3xl mb-1 gradient-text-secondary">Forever yours,</p>
-        <p class="font-cursive text-2xl" style="color: #d4a574;">Your Best Friend 🤍</p>
+   </section><!-- Chapter 2: The Growing Years -->
+   <section class="section" style="background: linear-gradient(180deg, #1a1a1a 0%, #2d1f2d 100%);">
+    <h2 class="section-title text-2xl md:text-3xl">Chapter II</h2>
+    <p class="text-center font-elegant text-3xl md:text-4xl text-[#FDF5E6] mb-16 italic">"The Growing Years"</p>
+    <div class="overflow-hidden">
+     <div class="film-strip">
+      <div class="film-frame">
+       <div class="film-content">
+        😂
        </div>
       </div>
-     </div><!-- Handwritten postscript -->
-     <div class="note-premium mt-10 mx-4 md:mx-12 rounded-xl p-6 section-entrance" style="animation-delay: 0.4s;">
-      <p class="font-handwritten text-2xl text-gray-800" style="line-height: 1.8;"><span style="color: #d4a574;">P.S.</span> — Remember that time we laughed so hard we cried? Yeah, I think about that moment at least once a week. Here's to a thousand more of those. 🌷✨</p>
-     </div>
-    </div>
-   </section><!-- Premium divider -->
-   <div class="divider-premium mx-auto w-3/4 max-w-2xl my-8"></div><!-- Photo Gallery Section -->
-   <section class="py-24 px-6 relative z-10">
-    <div class="max-w-7xl mx-auto"><!-- Section header -->
-     <div class="text-center mb-20 section-entrance">
-      <h2 class="font-cursive text-5xl md:text-6xl mb-4 gradient-text-primary" style="text-shadow: 0 4px 15px rgba(201, 160, 220, 0.2);">3 Years, Countless Memories</h2>
-      <p class="font-serif text-lg text-gray-600 mt-3">Every moment with you is a treasure 📸</p>
-      <div class="mt-4 h-1 w-32 mx-auto rounded-full" style="background: linear-gradient(90deg, #f5d0c5, #c9a0dc);"></div>
-     </div><!-- Premium polaroid gallery -->
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16"><!-- Photo 1 -->
-      <div class="flex justify-center section-entrance" style="animation-delay: 0.1s;">
-       <div class="polaroid-premium shadow-elevated" style="--rotation: -4deg;">
-        <div class="w-full aspect-square rounded-sm overflow-hidden" style="background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%); box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">
-         <div class="w-full h-full flex items-center justify-center p-4">
-          <div class="text-center"><span class="text-7xl block mb-3">📷</span>
-           <p class="font-handwritten text-gray-500 text-lg">Add your photo</p>
-          </div>
-         </div>
-        </div>
-        <p class="font-handwritten text-center mt-3 text-gray-700 text-lg">The day we met 🌸</p>
+      <div class="film-frame">
+       <div class="film-content">
+        🎉
        </div>
-      </div><!-- Photo 2 -->
-      <div class="flex justify-center section-entrance" style="animation-delay: 0.2s;">
-       <div class="polaroid-premium shadow-elevated" style="--rotation: 3deg;">
-        <div class="w-full aspect-square rounded-sm overflow-hidden" style="background: linear-gradient(135deg, #e8f5e9 0%, #e0f7fa 100%); box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">
-         <div class="w-full h-full flex items-center justify-center p-4">
-          <div class="text-center"><span class="text-7xl block mb-3">🎭</span>
-           <p class="font-handwritten text-gray-500 text-lg">Add your photo</p>
-          </div>
-         </div>
-        </div>
-        <p class="font-handwritten text-center mt-3 text-gray-700 text-lg">Our first adventure ✨</p>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        💃
        </div>
-      </div><!-- Photo 3 -->
-      <div class="flex justify-center section-entrance" style="animation-delay: 0.3s;">
-       <div class="polaroid-premium shadow-elevated" style="--rotation: -3deg;">
-        <div class="w-full aspect-square rounded-sm overflow-hidden" style="background: linear-gradient(135deg, #fff3e0 0%, #fce4ec 100%); box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">
-         <div class="w-full h-full flex items-center justify-center p-4">
-          <div class="text-center"><span class="text-7xl block mb-3">🎉</span>
-           <p class="font-handwritten text-gray-500 text-lg">Add your photo</p>
-          </div>
-         </div>
-        </div>
-        <p class="font-handwritten text-center mt-3 text-gray-700 text-lg">Celebrating wins 🥳</p>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🌟
        </div>
-      </div><!-- Photo 4 -->
-      <div class="flex justify-center section-entrance" style="animation-delay: 0.4s;">
-       <div class="polaroid-premium shadow-elevated" style="--rotation: 4deg;">
-        <div class="w-full aspect-square rounded-sm overflow-hidden" style="background: linear-gradient(135deg, #e1f5fe 0%, #f3e5f5 100%); box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">
-         <div class="w-full h-full flex items-center justify-center p-4">
-          <div class="text-center"><span class="text-7xl block mb-3">☕</span>
-           <p class="font-handwritten text-gray-500 text-lg">Add your photo</p>
-          </div>
-         </div>
-        </div>
-        <p class="font-handwritten text-center mt-3 text-gray-700 text-lg">Coffee dates ☕</p>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎭
        </div>
-      </div><!-- Photo 5 -->
-      <div class="flex justify-center section-entrance" style="animation-delay: 0.5s;">
-       <div class="polaroid-premium shadow-elevated" style="--rotation: -2deg;">
-        <div class="w-full aspect-square rounded-sm overflow-hidden" style="background: linear-gradient(135deg, #f3e5f5 0%, #fce4ec 100%); box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">
-         <div class="w-full h-full flex items-center justify-center p-4">
-          <div class="text-center"><span class="text-7xl block mb-3">🌙</span>
-           <p class="font-handwritten text-gray-500 text-lg">Add your photo</p>
-          </div>
-         </div>
-        </div>
-        <p class="font-handwritten text-center mt-3 text-gray-700 text-lg">Late night talks 🌙</p>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎪
        </div>
-      </div><!-- Photo 6 -->
-      <div class="flex justify-center section-entrance" style="animation-delay: 0.6s;">
-       <div class="polaroid-premium shadow-elevated" style="--rotation: 2deg;">
-        <div class="w-full aspect-square rounded-sm overflow-hidden" style="background: linear-gradient(135deg, #fff8e1 0%, #e8f5e9 100%); box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">
-         <div class="w-full h-full flex items-center justify-center p-4">
-          <div class="text-center"><span class="text-7xl block mb-3">💕</span>
-           <p class="font-handwritten text-gray-500 text-lg">Add your photo</p>
-          </div>
-         </div>
-        </div>
-        <p class="font-handwritten text-center mt-3 text-gray-700 text-lg">My favorite 💕</p>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎠
+       </div>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎡
+       </div>
+      </div><!-- Duplicate for seamless loop -->
+      <div class="film-frame">
+       <div class="film-content">
+        😂
+       </div>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎉
+       </div>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        💃
+       </div>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🌟
+       </div>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎭
+       </div>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎪
+       </div>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎠
+       </div>
+      </div>
+      <div class="film-frame">
+       <div class="film-content">
+        🎡
        </div>
       </div>
      </div>
     </div>
-   </section><!-- Premium divider -->
-   <div class="divider-premium mx-auto w-3/4 max-w-2xl my-8"></div><!-- Timeline Section -->
-   <section class="py-24 px-6 relative z-10">
-    <div class="max-w-5xl mx-auto"><!-- Section header -->
-     <div class="text-center mb-20 section-entrance">
-      <h2 class="font-cursive text-5xl md:text-6xl mb-4 gradient-text-primary">Our Journey Together</h2>
-      <p class="font-serif text-lg text-gray-600">Three years of growing, laughing, and loving ����</p>
-      <div class="mt-4 h-1 w-40 mx-auto rounded-full" style="background: linear-gradient(90deg, #f5d0c5, #c9a0dc);"></div>
-     </div><!-- Timeline -->
-     <div class="relative"><!-- Timeline line -->
-      <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-1.5 timeline-line-premium transform md:-translate-x-1/2 rounded-full"></div><!-- Year 1 -->
-      <div class="relative flex flex-col md:flex-row items-start md:items-center mb-20 section-entrance" style="animation-delay: 0.1s;"><!-- Timeline dot -->
-       <div class="absolute left-0 md:left-1/2 -translate-x-1.5 md:translate-x--1/2 timeline-dot" style="background: linear-gradient(135deg, #fce4ec, #f8bbd9);"></div>
-       <div class="md:w-1/2 md:pr-16 md:text-right pl-16 md:pl-0">
-        <div class="glass-card rounded-2xl p-8 shadow-elevated relative"><span class="inline-block px-5 py-2 rounded-full text-sm font-semibold mb-4" style="background: linear-gradient(135deg, #fce4ec, #f8bbd9); color: #ad1457;">🌸 Year One</span>
-         <h3 class="font-cursive text-3xl mb-3 gradient-text-secondary">The Beginning</h3>
-         <p class="font-body text-gray-700 leading-relaxed mb-4">Strangers became friends. Awkward hellos turned into endless conversations. We discovered we were kindred spirits — two souls meant to find each other.</p>
-         <div class="note-premium p-4 rounded-lg text-base">
-          "I knew from day one you were going to be special." ✨
-         </div>
-        </div>
-       </div>
-       <div class="hidden md:block md:w-1/2"></div>
-      </div><!-- Year 2 -->
-      <div class="relative flex flex-col md:flex-row items-start md:items-center mb-20 section-entrance" style="animation-delay: 0.3s;"><!-- Timeline dot -->
-       <div class="absolute left-0 md:left-1/2 -translate-x-1.5 md:translate-x--1/2 timeline-dot" style="background: linear-gradient(135deg, #e1bee7, #ce93d8);"></div>
-       <div class="hidden md:block md:w-1/2"></div>
-       <div class="md:w-1/2 md:pl-16 pl-16">
-        <div class="glass-card rounded-2xl p-8 shadow-elevated relative"><span class="inline-block px-5 py-2 rounded-full text-sm font-semibold mb-4" style="background: linear-gradient(135deg, #e1bee7, #ce93d8); color: #6a1b9a;">🦋 Year Two</span>
-         <h3 class="font-cursive text-3xl mb-3 gradient-text-secondary">Growing Together</h3>
-         <p class="font-body text-gray-700 leading-relaxed mb-4">We weathered storms and celebrated sunshine. Through every challenge, our bond grew stronger. You became my safe place, my comfort zone, my home.</p>
-         <div class="note-premium p-4 rounded-lg text-base">
-          "Life tested us, and we passed with flying colors." 🌈
-         </div>
-        </div>
-       </div>
-      </div><!-- Year 3 -->
-      <div class="relative flex flex-col md:flex-row items-start md:items-center section-entrance" style="animation-delay: 0.5s;"><!-- Timeline dot -->
-       <div class="absolute left-0 md:left-1/2 -translate-x-1.5 md:translate-x--1/2 timeline-dot" style="background: linear-gradient(135deg, #ffe0b2, #ffcc80);"></div>
-       <div class="md:w-1/2 md:pr-16 md:text-right pl-16 md:pl-0">
-        <div class="glass-card rounded-2xl p-8 shadow-elevated relative"><span class="inline-block px-5 py-2 rounded-full text-sm font-semibold mb-4" style="background: linear-gradient(135deg, #ffe0b2, #ffcc80); color: #e65100;">🌻 Year Three</span>
-         <h3 class="font-cursive text-3xl mb-3 gradient-text-secondary">Unbreakable</h3>
-         <p class="font-body text-gray-700 leading-relaxed mb-4">Now here we are — inseparable, irreplaceable. What started as friendship has become family. You're not just my best friend; you're my person, my forever.</p>
-         <div class="note-premium p-4 rounded-lg text-base">
-          "Three years down, a lifetime to go." 💕
-         </div>
-        </div>
-       </div>
-       <div class="hidden md:block md:w-1/2"></div>
+    <p class="text-center font-classic text-xl text-[#E8B4B8] mt-12 tracking-wider">Candid moments, endless laughter, growing together</p>
+   </section><!-- Chapter 3: Unforgettable Moments -->
+   <section class="section">
+    <h2 class="section-title text-2xl md:text-3xl">Chapter III</h2>
+    <p class="text-center font-elegant text-3xl md:text-4xl text-[#FDF5E6] mb-16 italic">"Unforgettable Moments"</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+     <div class="relative group overflow-hidden rounded-xl" style="height: 300px; background: linear-gradient(135deg, #722F37 0%, #D4AF37 100%);">
+      <div class="absolute inset-0 flex items-center justify-center text-6xl transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-2xl">
+       🏖️
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+       <p class="font-elegant text-[#FDF5E6] text-lg">Adventures Together</p>
+      </div>
+     </div>
+     <div class="relative group overflow-hidden rounded-xl" style="height: 300px; background: linear-gradient(135deg, #E8B4B8 0%, #2d1f2d 100%);">
+      <div class="absolute inset-0 flex items-center justify-center text-6xl transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-2xl">
+       🤳
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+       <p class="font-elegant text-[#FDF5E6] text-lg">Countless Selfies</p>
+      </div>
+     </div>
+     <div class="relative group overflow-hidden rounded-xl" style="height: 300px; background: linear-gradient(135deg, #D4AF37 0%, #722F37 100%);">
+      <div class="absolute inset-0 flex items-center justify-center text-6xl transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-2xl">
+       🎊
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+       <p class="font-elegant text-[#FDF5E6] text-lg">Celebrations</p>
       </div>
      </div>
     </div>
-   </section><!-- Premium divider -->
-   <div class="divider-premium mx-auto w-3/4 max-w-2xl my-8"></div><!-- Quotes Section -->
-   <section class="py-24 px-6 relative z-10">
-    <div class="max-w-6xl mx-auto"><!-- Section header -->
-     <div class="text-center mb-20 section-entrance">
-      <h2 class="font-cursive text-5xl md:text-6xl mb-4 gradient-text-primary">Words From The Heart</h2>
-      <p class="font-serif text-lg text-gray-600">Little messages that mean everything 💌</p>
-      <div class="mt-4 h-1 w-36 mx-auto rounded-full" style="background: linear-gradient(90deg, #f5d0c5, #c9a0dc);"></div>
-     </div><!-- Quotes grid -->
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-10"><!-- Quote 1 -->
-      <div class="glass-card quote-card rounded-2xl p-10 shadow-elevated relative section-entrance" style="animation-delay: 0.1s;"><span class="quote-mark absolute top-2 left-4">‟</span>
-       <p class="font-body text-gray-800 text-lg leading-relaxed pt-8 pb-6">True friends are never apart, maybe in distance but never in heart. And Saniya, you've proven that every single day.</p>
-       <div class="flex items-center gap-3 pt-4 border-t border-gray-100"><span class="text-2xl">🌸</span> <span class="font-handwritten text-lg text-gray-600">About you</span>
+   </section><!-- Emotional Message Scene -->
+   <section class="emotional-section">
+    <div class="particles">
+     <div class="particle" style="left: 15%; animation-delay: 0.3s;"></div>
+     <div class="particle" style="left: 35%; animation-delay: 1.3s;"></div>
+     <div class="particle" style="left: 55%; animation-delay: 0.8s;"></div>
+     <div class="particle" style="left: 75%; animation-delay: 1.8s;"></div>
+     <div class="particle" style="left: 85%; animation-delay: 2.3s;"></div>
+    </div>
+    <p id="emotionalText" class="emotional-text">"Thank you for being the best part of my life."</p>
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2"><span class="text-[#D4AF37] font-cinematic text-sm tracking-widest">— A MESSAGE FROM THE HEART —</span>
+    </div>
+   </section><!-- Memory Timeline -->
+   <section class="section">
+    <h2 class="section-title text-2xl md:text-3xl">Our 3-Year Journey</h2>
+    <div class="timeline">
+     <div class="timeline-item" style="animation-delay: 0.2s;">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+       <div class="timeline-year">
+        Year One — 2022
        </div>
-      </div><!-- Quote 2 -->
-      <div class="glass-card quote-card rounded-2xl p-10 shadow-elevated relative section-entrance" style="animation-delay: 0.2s;"><span class="quote-mark absolute top-2 left-4">‟</span>
-       <p class="font-body text-gray-800 text-lg leading-relaxed pt-8 pb-6">In a world full of temporary things, you are a perpetual feeling of warmth and joy that I never want to let go of.</p>
-       <div class="flex items-center gap-3 pt-4 border-t border-gray-100"><span class="text-2xl">✨</span> <span class="font-handwritten text-lg text-gray-600">For you</span>
+       <div class="timeline-text">
+        The year we became friends. Late-night talks, shared secrets, and the beginning of something beautiful. 💖
        </div>
-      </div><!-- Quote 3 -->
-      <div class="glass-card quote-card rounded-2xl p-10 shadow-elevated relative section-entrance" style="animation-delay: 0.3s;"><span class="quote-mark absolute top-2 left-4">‟</span>
-       <p class="font-body text-gray-800 text-lg leading-relaxed pt-8 pb-6">You have this incredible ability to make ordinary moments feel magical. That's your superpower, and I'm so lucky.</p>
-       <div class="flex items-center gap-3 pt-4 border-t border-gray-100"><span class="text-2xl">💫</span> <span class="font-handwritten text-lg text-gray-600">Always</span>
+      </div>
+     </div>
+     <div class="timeline-item" style="animation-delay: 0.4s;">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+       <div class="timeline-year">
+        Year Two — 2023
        </div>
-      </div><!-- Quote 4 -->
-      <div class="glass-card quote-card rounded-2xl p-10 shadow-elevated relative section-entrance" style="animation-delay: 0.4s;"><span class="quote-mark absolute top-2 left-4">‟</span>
-       <p class="font-body text-gray-800 text-lg leading-relaxed pt-8 pb-6">At 21, you've already touched so many lives. I can't wait to see the incredible things you'll accomplish next!</p>
-       <div class="flex items-center gap-3 pt-4 border-t border-gray-100"><span class="text-2xl">🌟</span> <span class="font-handwritten text-lg text-gray-600">Proudly</span>
+       <div class="timeline-text">
+        Adventures, growth, and countless memories. We learned, laughed, and loved through it all. ✨
+       </div>
+      </div>
+     </div>
+     <div class="timeline-item" style="animation-delay: 0.6s;">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+       <div class="timeline-year">
+        Year Three — 2024
+       </div>
+       <div class="timeline-text">
+        Stronger than ever. Through every high and low, our friendship only grew deeper. 🌟
+       </div>
+      </div>
+     </div>
+     <div class="timeline-item" style="animation-delay: 0.8s;">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+       <div class="timeline-year">
+        Today — Your 20th 🎂
+       </div>
+       <div class="timeline-text">
+        Celebrating you, celebrating us, celebrating the beautiful journey that continues forever. 💫
        </div>
       </div>
      </div>
     </div>
-   </section><!-- Premium divider -->
-   <div class="divider-premium mx-auto w-3/4 max-w-2xl my-8"></div><!-- Birthday Wishes Section -->
-   <section class="py-24 px-6 relative z-10">
-    <div class="max-w-5xl mx-auto"><!-- Section header -->
-     <div class="text-center mb-20 section-entrance">
-      <h2 class="font-cursive text-5xl md:text-6xl mb-4 gradient-text-primary">Birthday Wishes For You</h2>
-      <p class="font-serif text-lg text-gray-600">21 things I wish for you 🎁</p>
-      <div class="mt-4 h-1 w-32 mx-auto rounded-full" style="background: linear-gradient(90deg, #f5d0c5, #c9a0dc);"></div>
-     </div><!-- Wishes grid -->
-     <div class="glass-card rounded-3xl p-10 md:p-14 shadow-elevated section-entrance">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🌟</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Endless happiness that fills your heart</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">💪</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Strength to conquer every challenge</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🎯</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Success in everything you pursue</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">❤️</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Love that surrounds you always</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">✈️</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Adventures that take your breath away</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">😂</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Laughter that echoes through your days</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🌈</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Rainbow moments after every storm</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🦋</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Beautiful transformations and growth</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🏡</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">A place that always feels like home</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">📚</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Wisdom that guides your path</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🌻</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Sunny days that warm your soul</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">💎</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Precious moments worth remembering</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🎵</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Music that moves your spirit</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🌙</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Peaceful nights and sweet dreams</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🤗</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Hugs that make everything better</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🎨</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Creativity that paints your world</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🌺</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Beauty in every little thing</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">💭</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Dreams that dare to come true</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">🕊️</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Peace that settles in your heart</p>
-       </div>
-       <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/60 transition-all duration-300 cursor-pointer group"><span class="text-3xl group-hover:scale-125 transition-transform duration-300">⭐</span>
-        <p class="font-body text-gray-700 text-lg group-hover:text-gray-900 transition-colors">Magic in your everyday life</p>
-       </div>
-      </div><!-- 21st special wish -->
-      <div class="mt-12 p-8 rounded-2xl text-center pulse-glow" style="background: linear-gradient(135deg, rgba(201, 160, 220, 0.15), rgba(245, 208, 197, 0.15)); border: 2px solid rgba(201, 160, 220, 0.3);"><span class="text-5xl mb-4 inline-block">👯‍♀️</span>
-       <p class="font-cursive text-3xl mb-3 gradient-text-primary">And most importantly...</p>
-       <p class="font-body text-gray-800 text-xl leading-relaxed">A lifetime of friendship with someone who loves you endlessly — that's me! 💕</p>
+   </section><!-- Birthday Celebration Scene -->
+   <section class="celebration-section" id="celebrationSection"><!-- Confetti will be added by JS -->
+    <h2 class="font-cinematic text-3xl md:text-4xl text-[#D4AF37] mb-8 tracking-wider text-center px-4">Happy Birthday!</h2>
+    <div class="cake">
+     🎂
+    </div>
+    <div class="flex gap-4 mt-8 text-4xl"><span class="animate-bounce" style="animation-delay: 0s;">🎈</span> <span class="animate-bounce" style="animation-delay: 0.2s;">🎁</span> <span class="animate-bounce" style="animation-delay: 0.4s;">🎉</span> <span class="animate-bounce" style="animation-delay: 0.6s;">🎊</span> <span class="animate-bounce" style="animation-delay: 0.8s;">🎈</span>
+    </div>
+    <p id="birthdayWish" class="font-elegant text-xl md:text-2xl text-[#FDF5E6] mt-8 text-center px-6 max-w-2xl">May this year bring you endless joy, love, and all the dreams your heart desires. You deserve the world and more! 💖</p>
+   </section><!-- End Credits -->
+   <section class="credits-section">
+    <div class="credits-roll">
+     <div class="credits-title">
+      — THE END —
+     </div>
+     <div class="mb-16">
+      <div class="credit-role">
+       Directed With Love By
+      </div>
+      <div class="credit-item text-2xl" id="directorCredit">
+       Your Best Friend 🎬❤️
+      </div>
+     </div>
+     <div class="mb-16">
+      <div class="credit-role">
+       Starring
+      </div>
+      <div class="credit-item text-2xl" id="starCredit">
+       Saniya
+      </div>
+     </div>
+     <div class="mb-16">
+      <div class="credit-role">
+       A Production Of
+      </div>
+      <div class="credit-item">
+       3 Years of Beautiful Friendship
+      </div>
+     </div>
+     <div class="mb-16">
+      <div class="credit-role">
+       Special Thanks To
+      </div>
+      <div class="credit-item">
+       Every Moment We've Shared
+      </div>
+     </div>
+     <div class="mt-20 pt-10 border-t border-[#D4AF37]/30">
+      <p class="font-classic text-[#E8B4B8] text-lg tracking-wider">"Our Story Continues..."</p>
+      <div class="text-4xl mt-6">
+       💫
       </div>
      </div>
     </div>
-   </section><!-- Premium divider -->
-   <div class="divider-premium mx-auto w-3/4 max-w-2xl my-8"></div><!-- Closing Section -->
-   <section class="py-24 px-6 relative z-10">
-    <div class="max-w-3xl mx-auto text-center">
-     <div class="section-entrance"><!-- Top decoration -->
-      <div class="mb-8 flex justify-center gap-4"><span class="text-6xl float-animation glow-animation">🌷</span>
-      </div><!-- Closing title -->
-      <h2 id="closing-title" class="font-cursive text-5xl md:text-6xl mb-12 gradient-text-primary" style="text-shadow: 0 4px 15px rgba(201, 160, 220, 0.2);">Here's to Forever</h2><!-- Main message -->
-      <div class="glass-card rounded-3xl p-10 md:p-14 shadow-elevated mb-12">
-       <p class="font-body text-gray-800 text-lg leading-8 mb-6">As you step into this beautiful new chapter of your life, know that I'll be right beside you — cheering for you, believing in you, loving you unconditionally.</p>
-       <p class="font-body text-gray-800 text-lg leading-8 mb-6">Thank you for three incredible years of friendship. Thank you for every laugh, every tear, every memory. Thank you for being the extraordinary person you are.</p>
-       <p class="font-handwritten text-3xl gradient-text-secondary" style="text-shadow: 0 2px 8px rgba(212, 165, 116, 0.2);">Here's to 21, to us, and to forever. 🥂</p>
-      </div><!-- Final message -->
-      <div class="note-premium mx-auto max-w-md rounded-xl p-8 mb-12">
-       <p id="closing-message" class="font-handwritten text-3xl text-gray-800">Happy 21st Birthday, my forever friend 🌷</p>
-      </div><!-- Final hearts -->
-      <div class="flex justify-center gap-6 mb-8"><span class="heart-beat text-5xl glow-animation" style="color: #f5a0a0; filter: drop-shadow(0 0 15px rgba(245, 160, 160, 0.5));">♥</span> <span class="heart-beat text-5xl delay-200 glow-animation" style="color: #c9a0dc; filter: drop-shadow(0 0 15px rgba(201, 160, 220, 0.5));">♥</span> <span class="heart-beat text-5xl delay-400 glow-animation" style="color: #f5a0a0; filter: drop-shadow(0 0 15px rgba(245, 160, 160, 0.5));">♥</span>
-      </div><!-- Footer text -->
-      <p class="font-body text-gray-600 text-lg">Made with all my love, just for you ✨</p>
-     </div>
+    <div class="absolute bottom-8 left-0 right-0 text-center">
+     <p class="font-classic text-[#D4AF37]/60 text-sm tracking-widest">© 2024 — Made With Love 💖</p>
     </div>
-   </section><!-- Footer -->
-   <footer class="py-12 px-6 text-center relative z-10">
-    <div class="flex justify-center gap-4 mb-6"><span class="text-2xl opacity-70 float-animation">🌸</span> <span class="text-2xl opacity-70 float-animation delay-200">✨</span> <span class="text-2xl opacity-70 float-animation delay-400">🦋</span> <span class="text-2xl opacity-70 float-animation delay-100">🌷</span> <span class="text-2xl opacity-70 float-animation delay-300">💕</span>
-    </div>
-    <p class="font-handwritten text-xl text-gray-600">Saniya's 21st Birthday Celebration • Forever Friends 💕</p>
-   </footer>
-  </div><!-- Background Music Player -->
-  <audio id="background-music" loop style="display: none;"><source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-  </audio><!-- Floating Music Player Button -->
-  <div id="music-player" style="position: fixed; bottom: 30px; right: 30px; z-index: 1000;"><button id="music-toggle" onclick="toggleMusic()" style="
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #c9a0dc, #d4a574);
-      border: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-      box-shadow: 0 8px 25px rgba(201, 160, 220, 0.4);
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    " title="Toggle Music"> 🎵 </button>
+   </section>
+  </div><!-- Auto-scroll Controls -->
+  <div class="auto-scroll-controls"><button class="control-button" id="pausePlayBtn" onclick="toggleAutoScroll()" title="Play/Pause">▶</button>
+   <div class="status-text" id="statusText">
+    Playing
+   </div>
+  </div><!-- Music Player Controls -->
+  <div class="music-controls"><button class="music-button" id="musicToggleBtn" onclick="toggleMusic()" title="Mute/Unmute Music">🔊</button>
   </div>
   <script>
-    // Music Player Functionality
-    const audio = document.getElementById('background-music');
-    const musicToggle = document.getElementById('music-toggle');
-    let isPlaying = false;
-
-    function toggleMusic() {
-      if (isPlaying) {
-        audio.pause();
-        musicToggle.textContent = '🎵';
-        musicToggle.style.opacity = '0.7';
-        isPlaying = false;
-      } else {
-        audio.play().catch(error => {
-          console.log('Autoplay prevented by browser. User must click to play.');
-          isPlaying = false;
-          musicToggle.textContent = '🎵';
-        });
-        musicToggle.textContent = '🎶';
-        musicToggle.style.opacity = '1';
-        isPlaying = true;
-      }
-    }
-
-    // Add hover effect
-    musicToggle.addEventListener('mouseover', function() {
-      this.style.transform = 'scale(1.1)';
-    });
-
-    musicToggle.addEventListener('mouseout', function() {
-      this.style.transform = 'scale(1)';
-    });
-
-    // Try to autoplay with sound (most browsers block this)
-    setTimeout(() => {
-      audio.volume = 0.3;
-      audio.play().catch(error => {
-        console.log('User interaction required to play music');
-      });
-    }, 2000);
-
     const defaultConfig = {
-      hero_title: "Happy 21st Birthday Saniya ✨",
-      hero_subtitle: "Celebrating 3 Beautiful Years of Friendship",
-      letter_title: "Dear Saniya,",
-      closing_title: "Here's to Forever",
-      closing_message: "Happy 21st Birthday, my forever friend 🌷"
+      birthday_name: 'Saniya',
+      main_title: 'Happy 20th Birthday',
+      subtitle: 'Our Story. Our Memories. Our Forever Friendship.',
+      emotional_message: 'Thank you for being the best part of my life.',
+      director_name: 'Your Best Friend'
     };
 
     let config = { ...defaultConfig };
+    
+    // Auto-scroll variables
+    let isAutoScrolling = true;
+    let autoScrollSpeed = 2;
+    let scrollAnimationId = null;
+    let lastManualScroll = 0;
+    
+    // Music variables
+    let isMusicPlaying = true;
+    let audioElement = null;
+    
+    // Create and setup audio element
+    function setupMusic() {
+      // Create audio element
+      audioElement = document.createElement('audio');
+      audioElement.id = 'bgMusic';
+      audioElement.loop = true;
+      audioElement.volume = 0.3;
+      
+      // IMPORTANT: Paste your YouTube to MP3 download link here
+      // You can convert YouTube videos to MP3 at: https://www.y2mate.com/ or similar service
+      // Then get a direct MP3 link and paste it below
+      const musicURL = 'music/birthday.mp3';
+      
+      // Add audio source
+      const source = document.createElement('source');
+      source.src = musicURL;
+      source.type = 'audio/mpeg';
+      audioElement.appendChild(source);
+      
+      document.body.appendChild(audioElement);
+    }
+    
+    // Toggle music
+    function toggleMusic() {
+      const btn = document.getElementById('musicToggleBtn');
+      
+      if (!audioElement) {
+        setupMusic();
+      }
+      
+      if (isMusicPlaying) {
+        audioElement.pause();
+        btn.textContent = '🔇';
+        btn.title = 'Unmute Music';
+        isMusicPlaying = false;
+      } else {
+        audioElement.play().catch(err => {
+          console.log('Audio playback failed:', err);
+        });
+        btn.textContent = '🔊';
+        btn.title = 'Mute Music';
+        isMusicPlaying = true;
+      }
+    }
+    
+    // Auto-scroll function
+    function autoScroll() {
+      if (!isAutoScrolling) return;
+      
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const currentScroll = window.scrollY;
+      
+      // If we reach the end, stop
+      if (currentScroll >= maxScroll - 5) {
+        isAutoScrolling = false;
+        updateControlsUI();
+        return;
+      }
+      
+      window.scrollBy(0, autoScrollSpeed);
+      scrollAnimationId = requestAnimationFrame(autoScroll);
+    }
+    
+    // Toggle auto-scroll
+    function toggleAutoScroll() {
+      isAutoScrolling = !isAutoScrolling;
+      updateControlsUI();
+      
+      if (isAutoScrolling) {
+        scrollAnimationId = requestAnimationFrame(autoScroll);
+      } else if (scrollAnimationId) {
+        cancelAnimationFrame(scrollAnimationId);
+      }
+    }
+    
+    // Update UI
+    function updateControlsUI() {
+      const btn = document.getElementById('pausePlayBtn');
+      const status = document.getElementById('statusText');
+      
+      if (isAutoScrolling) {
+        btn.textContent = '⏸';
+        btn.title = 'Pause';
+        status.textContent = 'Playing';
+      } else {
+        btn.textContent = '▶';
+        btn.title = 'Play';
+        status.textContent = 'Paused';
+      }
+    }
+    
+    // Detect manual scroll
+    window.addEventListener('wheel', () => {
+      lastManualScroll = Date.now();
+      if (isAutoScrolling) {
+        isAutoScrolling = false;
+        updateControlsUI();
+        if (scrollAnimationId) {
+          cancelAnimationFrame(scrollAnimationId);
+        }
+      }
+    }, { passive: true });
+    
+    window.addEventListener('touchmove', () => {
+      lastManualScroll = Date.now();
+      if (isAutoScrolling) {
+        isAutoScrolling = false;
+        updateControlsUI();
+        if (scrollAnimationId) {
+          cancelAnimationFrame(scrollAnimationId);
+        }
+      }
+    }, { passive: true });
+
+    // Countdown animation
+    function runCountdown() {
+      const countdownEl = document.getElementById('countdown');
+      const numberEl = document.getElementById('countdownNumber');
+      let count = 3;
+      
+      const interval = setInterval(() => {
+        // Create ring effect
+        const ring = document.createElement('div');
+        ring.className = 'countdown-ring';
+        ring.style.width = '200px';
+        ring.style.height = '200px';
+        ring.style.left = '50%';
+        ring.style.top = '50%';
+        ring.style.marginLeft = '-100px';
+        ring.style.marginTop = '-100px';
+        countdownEl.appendChild(ring);
+        
+        setTimeout(() => ring.remove(), 1000);
+        
+        count--;
+        if (count > 0) {
+          numberEl.textContent = count;
+          numberEl.style.animation = 'none';
+          numberEl.offsetHeight;
+          numberEl.style.animation = 'countPulse 1s ease-in-out';
+        } else if (count === 0) {
+          numberEl.textContent = '🎬';
+          numberEl.style.animation = 'none';
+          numberEl.offsetHeight;
+          numberEl.style.animation = 'countPulse 1s ease-in-out';
+        } else {
+          clearInterval(interval);
+          countdownEl.style.opacity = '0';
+          countdownEl.style.transition = 'opacity 1s ease';
+          setTimeout(() => {
+            countdownEl.classList.add('hidden');
+            document.getElementById('mainContent').classList.add('visible');
+            createConfetti();
+            createFireworks();
+            // Start auto-scroll after countdown
+            setTimeout(() => {
+              scrollAnimationId = requestAnimationFrame(autoScroll);
+              // Start music
+              setupMusic();
+              if (audioElement && isMusicPlaying) {
+                audioElement.play().catch(err => {
+                  console.log('Audio playback started');
+                });
+              }
+            }, 500);
+          }, 1000);
+        }
+      }, 1000);
+    }
+
+    // Create confetti
+    function createConfetti() {
+      const section = document.getElementById('celebrationSection');
+      const colors = ['#D4AF37', '#E8B4B8', '#722F37', '#FDF5E6', '#FFD700'];
+      
+      for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.animationDelay = Math.random() * 4 + 's';
+        confetti.style.animationDuration = (3 + Math.random() * 2) + 's';
+        section.appendChild(confetti);
+      }
+    }
+
+    // Create fireworks
+    function createFireworks() {
+      const section = document.getElementById('celebrationSection');
+      const colors = ['#D4AF37', '#E8B4B8', '#FFD700', '#FF69B4'];
+      
+      setInterval(() => {
+        const firework = document.createElement('div');
+        firework.className = 'firework';
+        const xStart = (20 + Math.random() * 60);
+        const yStart = (10 + Math.random() * 40);
+        
+        firework.style.left = xStart + '%';
+        firework.style.top = yStart + '%';
+        firework.style.color = colors[Math.floor(Math.random() * colors.length)];
+        firework.style.background = firework.style.color;
+        
+        // Create directional explosion
+        const angle = Math.random() * Math.PI * 2;
+        const distance = 150 + Math.random() * 200;
+        const tx = Math.cos(angle) * distance;
+        const ty = Math.sin(angle) * distance;
+        
+        firework.style.setProperty('--tx', tx + 'px');
+        firework.style.setProperty('--ty', ty + 'px');
+        
+        section.appendChild(firework);
+        
+        setTimeout(() => firework.remove(), 2000);
+      }, 600);
+    }
 
     async function onConfigChange(newConfig) {
-      config = { ...config, ...newConfig };
+      config = { ...defaultConfig, ...newConfig };
       
-      const heroTitle = document.getElementById('hero-title');
-      if (heroTitle) {
-        heroTitle.textContent = config.hero_title || defaultConfig.hero_title;
+      // Update hero section
+      const heroTitle = document.getElementById('heroTitle');
+      const heroName = document.getElementById('heroName');
+      const heroSubtitle = document.getElementById('heroSubtitle');
+      
+      if (heroTitle && heroName) {
+        heroName.textContent = config.birthday_name || defaultConfig.birthday_name;
+        heroTitle.innerHTML = `${config.main_title || defaultConfig.main_title}<br><span class="text-[#E8B4B8]" id="heroName">${config.birthday_name || defaultConfig.birthday_name}</span>`;
       }
       
-      const heroSubtitle = document.getElementById('hero-subtitle');
       if (heroSubtitle) {
-        heroSubtitle.textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+        heroSubtitle.textContent = config.subtitle || defaultConfig.subtitle;
       }
       
-      const letterTitle = document.getElementById('letter-title');
-      if (letterTitle) {
-        letterTitle.textContent = config.letter_title || defaultConfig.letter_title;
+      // Update emotional message
+      const emotionalText = document.getElementById('emotionalText');
+      if (emotionalText) {
+        emotionalText.textContent = `"${config.emotional_message || defaultConfig.emotional_message}"`;
       }
       
-      const closingTitle = document.getElementById('closing-title');
-      if (closingTitle) {
-        closingTitle.textContent = config.closing_title || defaultConfig.closing_title;
+      // Update credits
+      const directorCredit = document.getElementById('directorCredit');
+      const starCredit = document.getElementById('starCredit');
+      
+      if (directorCredit) {
+        directorCredit.textContent = `${config.director_name || defaultConfig.director_name} 🎬❤️`;
       }
       
-      const closingMessage = document.getElementById('closing-message');
-      if (closingMessage) {
-        closingMessage.textContent = config.closing_message || defaultConfig.closing_message;
+      if (starCredit) {
+        starCredit.textContent = config.birthday_name || defaultConfig.birthday_name;
       }
     }
 
@@ -793,14 +1496,15 @@
 
     function mapToEditPanelValues(config) {
       return new Map([
-        ["hero_title", config.hero_title || defaultConfig.hero_title],
-        ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
-        ["letter_title", config.letter_title || defaultConfig.letter_title],
-        ["closing_title", config.closing_title || defaultConfig.closing_title],
-        ["closing_message", config.closing_message || defaultConfig.closing_message]
+        ['birthday_name', config.birthday_name || defaultConfig.birthday_name],
+        ['main_title', config.main_title || defaultConfig.main_title],
+        ['subtitle', config.subtitle || defaultConfig.subtitle],
+        ['emotional_message', config.emotional_message || defaultConfig.emotional_message],
+        ['director_name', config.director_name || defaultConfig.director_name]
       ]);
     }
 
+    // Initialize
     if (window.elementSdk) {
       window.elementSdk.init({
         defaultConfig,
@@ -809,73 +1513,9 @@
         mapToEditPanelValues
       });
     }
-
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('section-in-view');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.section-entrance').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Confetti Animation on Load
-    function createConfetti() {
-      const colors = ['#c9a0dc', '#d4a574', '#f5a0a0', '#f5d0c5', '#e1bee7'];
-      const confetti = document.createElement('div');
-      confetti.style.cssText = `
-        position: fixed;
-        width: 10px;
-        height: 10px;
-        background: ${colors[Math.floor(Math.random() * colors.length)]};
-        left: ${Math.random() * 100}%;
-        top: -10px;
-        border-radius: 50%;
-        pointer-events: none;
-        z-index: 999;
-        animation: fall ${3 + Math.random() * 2}s linear forwards;
-      `;
-      document.body.appendChild(confetti);
-      setTimeout(() => confetti.remove(), 5000);
-    }
-
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes fall {
-        to {
-          transform: translateY(100vh) rotate(360deg);
-          opacity: 0;
-        }
-      }
-    `;
-    document.head.appendChild(style);
-
-    // Create confetti on page load
-    window.addEventListener('load', () => {
-      for (let i = 0; i < 20; i++) {
-        setTimeout(() => createConfetti(), i * 100);
-      }
-    });
-
-    // Additional confetti on scroll to hero
-    let confettiTriggered = false;
-    window.addEventListener('scroll', () => {
-      if (window.scrollY < 200 && !confettiTriggered) {
-        confettiTriggered = true;
-        for (let i = 0; i < 15; i++) {
-          setTimeout(() => createConfetti(), i * 80);
-        }
-      }
-    });
+    
+    // Start countdown when page loads
+    runCountdown();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c412035f70f4479',t:'MTc2OTQ0MjIwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cb51c6cf13ab5d1',t:'MTc3MDY1ODM5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
